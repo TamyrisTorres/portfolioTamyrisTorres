@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles\style.css">
 </head>
 <body>
-    <header></header>
+    <header class="cabecalho">
+      <nav class="cabecalho__menu">
+        <a class="cabecalho__menu__link" href="index.html">Home</a>
+        <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
+      </nav>
+    </header>
     <main class="apresentacao">
       <section class="apresentacao__conteudo">
         <h1 class="apresentacao__titulo">Tamyris Torres - 
         <strong class="titulo-destaque">Desenvolvedora BackEnd</strong></h1>
-        <p class="aprensentacao__texto">Como Engenheira de Software especializada em Java, 
-          trago experiência sólida em projetos, automação e resolução de bugs. 
-          Reconhecida por responsabilidade e determinação, colaboro efetivamente em equipe, 
-          comunicando-me claramente. Tenho experiência em Java, MySQL, SpringBoot, já trabalhei com Docker, Regex, 
-          JUnit e possuo conhecimentos com Microsserviços, HTML, CSS. Tenho habilidades em APIs RESTful, bancos de dados relacionais e controle de versão. Estou pronta para enfrentar desafios, 
-          contribuir com o crescimento da equipe e expandir minhas habilidades em desenvolvimento de software. 
-        Vamos conversar?</p>
+        <p class="aprensentacao__texto">🚀 Engenheira de Software Java experiente em projetos, 
+          automação e resolução de bugs. Reconhecida por responsabilidade e determinação, 
+          colaboro efetivamente em equipe, comunicando-me claramente. Habilidades incluem Java, 
+          MySQL, SpringBoot, Docker, Regex, JUnit e conhecimentos em Microsserviços, HTML, CSS e 
+          APIs RESTful. Pronta para enfrentar desafios e contribuir com o crescimento da equipe. 
+          Vamos conversar?
+        </p>
         <div class="apresentacao__links">
-          <a class="apresentacao_links_link" href="https://github.com/TamyrisTorres" target="_blank"> GitHub</a>
-          <a class="apresentacao_links_link" href="https://www.linkedin.com/in/tamyris-torres-284747168/" target="_blank"> LinkedIn</a>
+          <h2 class="apresentacao__link__subtitulo">Acesse minhas redes:</h2>
+          <a class="apresentacao_links_navegacao" href="https://github.com/TamyrisTorres" target="_blank">
+            <img src="img\github.png">
+            GitHub
+          </a>
+          <a class="apresentacao_links_navegacao" href="https://www.linkedin.com/in/tamyris-torres-284747168/" target="_blank"> 
+            <img src="img\linkedin.png" alt="">LinkedIn</a>
         </div>
       </section>   
-      <img src="image%20(1).pngng" alt="Foto de Tamyris Torres">
+      <img class="apresentacao__imagem" src="img\image (1).png" alt="Foto de Tamyris Torres">
     </main>
-    <footer></footer>
+    <footer><p class="rodape">Desenvolvido por Tamyris Torres</p></footer>
 </body>
 </html>
