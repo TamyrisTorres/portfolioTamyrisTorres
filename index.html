@@ -1,68 +1,210 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="cabecalho">
-      <nav class="cabecalho__menu">
-        <a class="cabecalho__menu__link" href="index.html">Home</a>
-        <a class="cabecalho__menu__link" href="#about">Sobre mim</a>
-        <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
-      </nav>
-    </header>
-    <main class="apresentacao">
-      <section class="apresentacao__conteudo">
-        <h4 class="h4-style">Olá, meu nome é</h4>
-        <h1 class="apresentacao__titulo">Tamyris Torres - 
-        <strong class="titulo-destaque">Desenvolvedora BackEnd</strong></h1>
-        <p class="aprensentacao__texto">🚀 Engenheira de Software Java experiente em projetos, 
-          automação e resolução de bugs. Reconhecida por responsabilidade e determinação, 
-          colaboro efetivamente em equipe, comunicando-me claramente. Habilidades incluem Java, 
-          MySQL, SpringBoot, Docker, Regex, JUnit e conhecimentos em Microsserviços, HTML, CSS e 
-          APIs RESTful. Pronta para enfrentar desafios e contribuir com o crescimento da equipe. 
-          Vamos conversar?
-        </p>
-      </section>  
-      <div class="apresentacao__links">
-          <h2 class="apresentacao__link__subtitulo">Acesse minhas redes:</h2>
-          <a class="apresentacao_links_navegacao" href="https://github.com/TamyrisTorres" target="_blank">
-            <img src="github.png">
-            GitHub
-          </a>
-          <a class="apresentacao_links_navegacao" href="https://www.linkedin.com/in/tamyris-torres-284747168/" target="_blank"> 
-            <img src="linkedin.png" alt="">LinkedIn</a>
-        </div> 
-    </main>
-    <hr class="linha-separadora">
-    <main id="about" class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__titulo">Sobre mim</h1>
-            <p class="aprensentacao__texto">Olá! Sou uma engenheira de software altamente dedicada e determinada,
-                comprometida em entregar resultados excepcionais em cada projeto que me envolvo.
-                Com uma vasta experiência que abrange desde o desenvolvimento de soluções
-                personalizadas para clientes até a automação de processos de migração e
-                resolução de bugs, trago uma abordagem objetiva e eficiente para cada desafio
-                que enfrento.
-            </p>
-            <p class="aprensentacao__texto">Meu foco principal é sempre buscar soluções eficazes e inovadoras,
-                contribuindo assim para o aprimoramento contínuo das plataformas em que
-                trabalho. Sou uma profissional que valoriza o aprendizado contínuo, sempre
-                buscando novas habilidades e conhecimentos para me manter atualizada com
-                as mais recentes tendências e tecnologias do mercado.
-                Além disso, possuo excelentes habilidades de comunicação e
-                colaboração em equipe, o que me permite trabalhar de forma eficaz em
-                ambientes colaborativos. Estou sempre aberta a novas ideias e perspectivas,
-                valorizando o trabalho em equipe e o compartilhamento de conhecimento.
-                Estou pronta para enfrentar desafios e contribuir para o crescimento da
-                equipe em que estiver inserida. Estou ansiosa para continuar expandindo
-                minhas habilidades em desenvolvimento de software e contribuir para o sucesso
-                de projetos inovadores.</p>
-        </section>
-    </main>
-    <footer><p class="rodape">Desenvolvido por Tamyris Torres</p></footer>
-  </body>
+  <header class="cabecalho">
+    <nav class="cabecalho__menu">
+      <a class="cabecalho__menu__link" href="index.html">Home</a>
+      <a class="cabecalho__menu__link" href="#about">Sobre mim</a>
+      <a class="cabecalho__menu__link" href="#curriculo">Competências</a>
+      <a class="cabecalho__menu__link" href="#experiencia">Experiências</a>
+      <a class="cabecalho__menu__link" href="#projetos">Projetos</a>
+
+    </nav>
+  </header>
+  <main class="apresentacao">
+    <section class="apresentacao__conteudo">
+      <h4 class="h4-style">Olá, meu nome é</h4>
+      <h1 class="apresentacao__titulo">Tamyris Torres
+        <strong class="titulo-destaque">Desenvolvedora BackEnd</strong>
+      </h1>
+      <p class="aprensentacao__texto">🚀 Engenheira de Software Java experiente em projetos,
+        automação e resolução de bugs. Reconhecida por responsabilidade e determinação,
+        colaboro efetivamente em equipe, comunicando-me claramente. Habilidades incluem Java,
+        MySQL, SpringBoot, Docker, Regex, JUnit e conhecimentos em Microsserviços, HTML, CSS e
+        JavaScript, Angular. Pronta para enfrentar desafios e contribuir com o crescimento da equipe.
+        Vamos conversar?
+      </p>
+    </section>
+    <div class="apresentacao__links">
+      <h2 class="apresentacao__link__subtitulo">Acesse minhas redes:</h2>
+      <a class="apresentacao_links_navegacao" href="https://github.com/TamyrisTorres" target="_blank">
+        <img src="github.png">
+        GitHub
+      </a>
+      <a class="apresentacao_links_navegacao" href="https://www.linkedin.com/in/tamyris-torres-284747168/"
+        target="_blank">
+        <img src="linkedin.png" alt="">LinkedIn</a>
+    </div>
+  </main>
+  <hr class="linha-separadora">
+  <main id="about" class="apresentacao">
+    <section class="apresentacao__conteudo">
+      <h1 class="apresentacao__titulo">Sobre mim</h1>
+      <p class="aprensentacao__texto">Olá! Sou uma engenheira de software altamente dedicada e determinada,
+        comprometida em entregar resultados excepcionais em cada projeto que me envolvo.
+        Com uma vasta experiência que abrange desde o desenvolvimento de soluções
+        personalizadas para clientes até a automação de processos de migração e
+        resolução de bugs, trago uma abordagem objetiva e eficiente para cada desafio
+        que enfrento.
+      </p>
+      <p class="aprensentacao__texto">Meu foco principal é sempre buscar soluções eficazes e inovadoras,
+        contribuindo assim para o aprimoramento contínuo das plataformas em que
+        trabalho. Sou uma profissional que valoriza o aprendizado contínuo, sempre
+        buscando novas habilidades e conhecimentos para me manter atualizada com
+        as mais recentes tendências e tecnologias do mercado.
+        Além disso, possuo excelentes habilidades de comunicação e
+        colaboração em equipe, o que me permite trabalhar de forma eficaz em
+        ambientes colaborativos. Estou sempre aberta a novas ideias e perspectivas,
+        valorizando o trabalho em equipe e o compartilhamento de conhecimento.
+        Estou pronta para enfrentar desafios e contribuir para o crescimento da
+        equipe em que estiver inserida. Estou ansiosa para continuar expandindo
+        minhas habilidades em desenvolvimento de software e contribuir para o sucesso
+        de projetos inovadores.</p>
+    </section>
+  </main>
+  <hr id="curriculo" class="linha-separadora">
+  <main class="apresentacao_curriculo">
+    <section class="apresentacao__conteudo_curriculo">
+      <h1 class="apresentacao__titulo">Competências</h1>
+      <p class="aprensentacao__texto">
+      <div class="apresentacao__texto__detalhes">
+        <ul>
+          <li class="mt-10"><strong class="titulo-destaque">Desenvolimento em Java</strong> - Experiência sólida em
+            desenvolvimento Back-end utilizando java. Conhecimento
+            avançado de conceitos fundamentais de java, como OOP,
+            manipulação de excecões, coleções, e Jakarta EE etc;</li>
+          <li class="mt-10"><strong class="titulo-destaque"> Frameworks Java</strong> - Conhecimento em framework
+            Spring Boot, Hibernate para o desenvolvimento
+            eficiente deaplicativos empresariais;</li>
+          <li class="mt-10"><strong class="titulo-destaque"> Angular </strong> - Desenvolvimento em projetos;</li>
+          <li class="mt-10"> <strong class="titulo-destaque"> APIs RESTful </strong> - Desenvolvimento e consumo de APIs
+            RESTful
+            para integração de sistemas;</li>
+          <li class="mt-10"> <strong class="titulo-destaque"> Bancos de Dados</strong> - Experiência em bancos de dados
+            relacionais, como MySQL e PostgreSQL; </li>
+          <li class="mt-10"> <strong class="titulo-destaque"> Ferramenta de Controle de Versão</strong> - Proficiência
+            em
+            ferramentas de controle de versão, como Git; </li>
+          <li class="mt-10"> <strong class="titulo-destaque"> Repositório</strong> - Experiência sólida na utilização
+            eficaz do
+            GitHub, abrangendo a criação e gestão de
+            repositórios, controle de versão, criação de branches,
+            realização de commits e pull requests, resolução de
+            conflitos, gerenciamento de issues, e colaboração
+            efetiva com outros desenvolvedores em projetos
+            diversos. </li>
+          <li class="mt-10"> <strong class="titulo-destaque"> Testes Automatizados</strong> - Prática em testes
+            unitários e integração usando frameworks como JUnit. Implementação de
+            testes automatizados para garantir a qualidade do código. </li>
+          <li class="mt-10"> <strong class="titulo-destaque"> Ferramenta de Build</strong> - Uso de ferramentas de build
+            como
+            Maven ou Gradle para automatizar o processo de construção.</li>
+          <li class="mt-10"> <strong class="titulo-destaque"> Metodologias Ágeis</strong> - Trabalho eficaz em ambientes
+            ágeis,
+            como Scrum ou Kanban. Participação em sprints, reuniões diárias e retrospectivas.</li>
+          <li class="mt-10"> <strong class="titulo-destaque"> Comunicação e Colaboração</strong> - Boas habilidades de
+            comunicação para trabalhar efetivamente em
+            equipe.Colaboração eficaz com membros de outras equipes,
+            como front-end, testes e operações.</li>
+        </ul>
+      </div>
+      </p>
+      <div id="experiencia"></div>
+      <h2 class="apresentacao__titulo curriculo">Experiências</h2>
+      <div class="apresentacao__texto__detalhes experiencia">
+        <ul class="aprensentacao__texto">
+          <li>
+            <h3>Minsait</h3>
+            <p><strong>Analista Desenvolvedor Pleno</strong></p>
+            <p>Atuo como desenvolvedor front-end, criando e aprimorando
+              soluções na plataforma Liferay, utilizando HTML, CSS e JavaScript.
+              Tenho experiência com Docker e aplico metodologias ágeis para otimizar
+              o desenvolvimento e a entrega contínua de projetos. Além disso, participo
+              ativamente de reuniões com o cliente para levantamento de requisitos e definição de estratégias.
+              Recentemente, contribuí para a implementação da nova página inicial da Gollog, desenvolvendo
+              módulos de layout reutilizáveis, implementando o tagueamento completo para monitoramento via
+              analytics e integrando a aplicação a APIs da Gol, garantindo o redirecionamento e
+              a interoperabilidade dos dados entre serviços.</p>
+            <br>
+            <p><strong>Período:</strong> 05/2024 - Atual</p>
+            <br>
+          </li>
+          <li>
+            <h3>Liferay</h3>
+            <p><strong>Assoc Consultant</strong></p>
+            <p>No time de GS Latam, atuei em projeto com cliente,
+              desenvolvendo tasks com a linguagem Java, MySQL, Liferay e Freemark.
+              Já no Time de Upgrade, atuei no desenvolvimento da automação da migração
+              dos clientes Liferay para a nova versão 7.4, neste projeto trabalhei com
+              a linguagem Java, Liferay, Regex e testes para automação.</p>
+            <br>
+            <p><strong>Engenheiro de software júnior</strong></p>
+            <p>No time de Solutions, atuei em tasks e resolução de bugs. Desenvolvi
+              em Java, trazendo soluções para o aperfeiçoamento do criador de sites da
+              Liferay na versão 7.4. Assim, além de utilizar Java, em cada task tinha
+              contato com várias ferramentas da Liferay, criação dos objects, segments
+              experience entre outras. Também, trabalhei com gradle, docker, hibernate e tomcat, JSON.</p>
+            <br>
+            <p><strong>Período:</strong> 04/2022 - 12/2023</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <div id="projetos"></div>
+  <hr class="linha-separadora">
+  <main class="apresentacao projetos">
+    <section class="apresentacao__conteudo projetos">
+      <div class="mt-20"></div>
+      <h1 class="apresentacao__titulo">Projetos</h1>
+      <p class="aprensentacao__texto">Aqui estão alguns dos projetos que desenvolvi:</p>
+      <div class="projeto">
+        <ul class="aprensentacao__texto">
+          <h4>Emissor de NF-e com Java e Spring Boot</h4>
+          <p>Desenvolvi uma API backend para emissão de Notas
+            Fiscais eletrônicas (NF-e), utilizando Java, Spring Boot
+            e Spring Security. O sistema realiza validações de CPF/CNPJ,
+            gera o XML conforme o modelo nacional da SEFAZ e está preparado
+            para futuras integrações com web services oficiais. O projeto
+            foca em segurança, boas práticas de desenvolvimento e estrutura modular.</p>
+          <br>
+          <p><strong>Link do projeto:</strong></p>
+          <a class="links_projetos" href="https://github.com/TamyrisTorres/emissorNfeTorres">EmissorNfeTorres</a>
+          <ul>
+      </div>
+      <div class="mt-10"></div>
+      <div class="projeto">
+        <ul class="aprensentacao__texto">
+          <h4>MentorIA – Plataforma de orientação profissional com IA</h4>
+          <p>Desenvolvi uma aplicação web interativa onde o usuário pode perguntar
+             sobre uma profissão específica, e a inteligência artificial retorna
+              informações relevantes, como descrição da carreira, habilidades exigidas,
+               áreas de atuação e dicas de formação.</p>
+          <p>Esse projeto foi fundamental para aprimorar minhas habilidades em
+             desenvolvimento full stack, especialmente no uso do Angular para
+              criar interfaces modernas e responsivas, e no domínio de práticas
+               de segurança no back-end com Spring Security. Também fortaleceu meu
+                entendimento de boas práticas de autenticação, criptografia e integração
+                 com serviços externos via APIs.O intuito deste projeto foi desenvolver
+                  minha habilidades com Angular, Spring Security, integração com IA e
+                   reforçar meu conhecimento com Java e Spring boot.</p>
+          <br>
+          <p><strong>Link do projeto:</strong></p>
+          <a class="links_projetos" href="https://github.com/TamyrisTorres/mentorIA">MentorIA</a>
+          <ul>
+      </div>
+  </main>
+  <footer>
+    <p class="rodape">Desenvolvido por Tamyris Torres</p>
+  </footer>
+</body>
+
 </html>

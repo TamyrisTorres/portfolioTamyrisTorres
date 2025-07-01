@@ -33,24 +33,28 @@ body {
 }
 .cabecalho__menu {
     display: flex;
-    gap: 60px;
+    gap: 5%;
 }
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
-    font-weight: 600px;
+    font-weight: 600p;
     color: var(--cor-terciaria);
     text-decoration: none;
-
 }
+
+.cabecalho__menu__link:hover{
+    text-decoration: underline;
+}
+
 .apresentacao {
-    padding: 0px 10% 0px;
+    padding: 10% 10%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    gap: 80px;
-    height: 100vh;
+    gap: 5%;
+    height: 60vh;
     
 }
 
@@ -68,12 +72,12 @@ body {
     margin-top: 20px;
 }
 .apresentacao__conteudo{
-    width: 55%;        
+    width: 100%;        
 }
 .apresentacao__titulo{
     font-size: 2.8rem;
     font-family: var(--fonte-primaria);
-    
+    margin-bottom: 4%;
 }
 
 .titulo-destaque{
@@ -82,7 +86,7 @@ body {
 .aprensentacao__texto {
     font-size: 1.25rem;
     font-family: var(--fonte-secundaria);
-    padding-top: 15px;
+    padding-top: 1rem;
     line-height: 1.5;
 }
 .apresentacao__texto__detalhes {
@@ -142,7 +146,7 @@ body {
     text-align: center;
     font-family: var(--fonte-secundaria);
     font-size: 1rem;
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 footer {
@@ -155,19 +159,73 @@ footer {
   z-index: 1000;
 }
 
+.apresentacao_curriculo{
+    margin-top: 0.8rem;
+    padding-left: 10%;
+}
+
+.apresentacao__conteudo_curriculo{
+    margin-top: 8%;
+    padding: 0% 10% 0% 0%;
+}
+
+.apresentacao__titulo.curriculo{
+    margin-top: 8%;
+}
+
+.apresentacao__texto__detalhes.experiencia{
+    margin-bottom: 5%;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.mt-20{
+    margin-top: 20px;
+}
+
+.links_projetos{
+    color: white;
+}
+
+.apresentacao__conteudo.projetos{
+    margin-top: 13%;
+    height: 100vh;
+}
+
+.projeto{
+    margin-bottom: 7%;
+}
+
 @media(max-width: 1200px){
     .cabecalho{
-        padding: 10%  ;
+        padding: 2% 1% 2% 2%;
     }
     .cabecalho__menu{
-        justify-content: center;
-        padding: 5%;
+        justify-content: start;
+        display: flex;
+        padding: 5% 0%;
+        gap: 2%;
+    }
+    .cabecalho__menu__link{
+        font-size: 0.9rem;
     }
     .apresentacao{
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
+        height: unset;
     }
     .apresentacao__conteudo{
-        width: auto;
+        margin: 23%;
+    }
+
+    .apresentacao__titulo{
+        font-size: 2rem;
+    }
+
+    .projeto{
+        padding-bottom: 17%;
     }
     
 }
