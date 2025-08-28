@@ -189,14 +189,19 @@ footer {
     color: white;
 }
 
+.apresentacao.projetos{
+    padding: 10% 10% 23% 10%;
+}
+
 .apresentacao__conteudo.projetos{
     margin-top: 13%;
     height: 100vh;
 }
 
 .projeto{
-    margin-bottom: 7%;
+    margin-bottom: 1%;
 }
+
 
 @media(max-width: 1200px){
     .cabecalho{
