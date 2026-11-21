@@ -1,9 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
-  imports: [],
   selector: 'app-header',
-  styleUrl: './header.scss',
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.html',
+  styleUrl: './header.scss'
 })
-export class Header {}
+export class Header {
+  menuAberto = signal(false);
+
+  alternarMenu() {
+    this.menuAberto.update(aberto => !aberto);
+  }
+
+  fecharMenu() {
+    this.menuAberto.set(false);
+  }
+}
