@@ -1,1 +1,64 @@
-<p>home works!</p>
+<section class="hero">
+  <p class="hero__saudacao">Olá, meu nome é</p>
+  <h1 class="hero__nome">Tamyris Torres</h1>
+  <h2 class="hero__cargo">Desenvolvedora Back-end Java</h2>
+  <p class="hero__texto">
+    Construo APIs e sistemas com Java e Spring Boot, e gosto de entender o problema
+    a fundo antes de escrever a primeira linha de código.
+  </p>
+  <div class="hero__links">
+    <a class="botao" href="https://github.com/TamyrisTorres" target="_blank" rel="noopener">GitHub</a>
+    <a class="botao botao--contorno" href="https://www.linkedin.com/in/tamyris-torres-284747168/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+
+<section id="sobre" class="secao">
+  <h2 class="secao__titulo">Sobre mim</h2>
+  <p>
+    Sou engenheira de software formada em Ciência da Computação, com experiência em
+    desenvolvimento back-end, automação de migrações e sustentação de sistemas.
+    No dia a dia, investigo bugs, leio muito código e ajudo o time a destravar problemas.
+  </p>
+  <p>
+    Fora do trabalho, sigo estudando e escrevendo sobre engenharia de software.
+    Os artigos ficam na seção <a routerLink="/artigos">Artigos</a>.
+  </p>
+
+  <h3 class="secao__subtitulo">Competências</h3>
+  <ul class="tags">
+    @for (item of competencias; track item) {
+      <li class="tag">{{ item }}</li>
+    }
+  </ul>
+</section>
+
+<section id="experiencia" class="secao">
+  <h2 class="secao__titulo">Experiência</h2>
+  <ol class="linha-do-tempo">
+    @for (exp of experiencias; track exp.empresa) {
+      <li class="linha-do-tempo__item">
+        <span class="linha-do-tempo__periodo">{{ exp.periodo }}</span>
+        <h3>{{ exp.cargo }} <span class="destaque">· {{ exp.empresa }}</span></h3>
+        <p>{{ exp.descricao }}</p>
+      </li>
+    }
+  </ol>
+</section>
+
+<section id="projetos" class="secao">
+  <h2 class="secao__titulo">Projetos</h2>
+  <div class="cards">
+    @for (projeto of projetos; track projeto.titulo) {
+      <article class="card">
+        <h3>{{ projeto.titulo }}</h3>
+        <p>{{ projeto.descricao }}</p>
+        <ul class="tags tags--pequenas">
+          @for (tec of projeto.tecnologias; track tec) {
+            <li class="tag">{{ tec }}</li>
+          }
+        </ul>
+        <a class="card__link" [href]="projeto.link" target="_blank" rel="noopener">Ver no GitHub →</a>
+      </article>
+    }
+  </div>
+</section>

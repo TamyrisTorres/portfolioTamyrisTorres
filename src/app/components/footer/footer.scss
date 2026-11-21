@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 10%;
+  background: var(--cor-fundo-claro);
+  font-size: 0.9rem;
+
+  &__links {
+    display: flex;
+    gap: 1.5rem;
+
+    a {
+      text-decoration: none;
+      &:hover { color: var(--cor-destaque); }
+    }
+  }
+}
