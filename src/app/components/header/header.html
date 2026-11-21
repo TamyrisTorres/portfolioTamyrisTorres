@@ -1,0 +1,12 @@
+<header class="header">
+  <a routerLink="/" class="logo" (click)="fecharMenu()">Tamyris<span>.</span></a>
+
+  <button class="menu-botao" (click)="alternarMenu()" aria-label="Abrir menu">☰</button>
+
+  <nav class="menu" [class.aberto]="menuAberto()">
+    <a routerLink="/" fragment="sobre" (click)="fecharMenu()">Sobre</a>
+    <a routerLink="/" fragment="experiencia" (click)="fecharMenu()">Experiência</a>
+    <a routerLink="/" fragment="projetos" (click)="fecharMenu()">Projetos</a>
+    <a routerLink="/artigos" routerLinkActive="ativo" (click)="fecharMenu()">Artigos</a>
+  </nav>
+</header>

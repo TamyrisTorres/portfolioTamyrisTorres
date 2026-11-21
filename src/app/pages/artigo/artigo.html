@@ -1,0 +1,14 @@
+<article class="artigo">
+  <a routerLink="/artigos" class="artigo__voltar">← Voltar para artigos</a>
+
+  @if (info(); as artigo) {
+    <span class="artigo__data">{{ artigo.data | date: 'dd/MM/yyyy' }}</span>
+    <h1 class="artigo__titulo">{{ artigo.titulo }}</h1>
+  }
+
+  @if (erro()) {
+    <p>Artigo não encontrado.</p>
+  } @else {
+    <div class="artigo-conteudo" [innerHTML]="conteudo()"></div>
+  }
+</article>
