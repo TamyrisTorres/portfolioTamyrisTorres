@@ -1,1 +1,14 @@
-<p>artigos works!</p>
+<section class="pagina">
+  <h1 class="pagina__titulo">Artigos</h1>
+  <p class="pagina__intro">O que venho estudando e aprendendo sobre desenvolvimento.</p>
+
+  @for (artigo of artigos; track artigo.slug) {
+    <a class="item" [routerLink]="['/artigos', artigo.slug]">
+      <span class="item__data">{{ artigo.data | date: 'dd/MM/yyyy' }}</span>
+      <h2>{{ artigo.titulo }}</h2>
+      <p>{{ artigo.resumo }}</p>
+    </a>
+  } @empty {
+    <p>Em breve, novos artigos por aqui.</p>
+  }
+</section>

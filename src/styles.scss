@@ -24,3 +24,35 @@ body {
 }
 
 a { color: inherit; }
+
+.artigo-conteudo {
+  font-size: 1.125rem;
+
+  h2, h3 { margin: 2rem 0 1rem; }
+  p, ul, ol { margin-bottom: 1.25rem; }
+  ul, ol { padding-left: 1.5rem; }
+  a { color: var(--cor-destaque); }
+
+  code {
+    background: var(--cor-fundo-claro);
+    padding: 0.15rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.95em;
+  }
+
+  pre {
+    background: var(--cor-fundo-claro);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1.25rem;
+
+    code { padding: 0; background: none; }
+  }
+
+  blockquote {
+    border-left: 3px solid var(--cor-destaque);
+    padding-left: 1rem;
+    opacity: 0.9;
+  }
+}
