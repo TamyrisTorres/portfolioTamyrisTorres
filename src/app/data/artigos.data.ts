@@ -9,8 +9,8 @@ export interface ArtigoInfo {
 export const artigos: ArtigoInfo[] = [
   {
     slug: 'principios-de-hooker',
-    titulo: 'Os 7 princípios de David Hooker',
-    resumo: 'O que sete princípios dos anos 90 ainda têm a ensinar sobre engenharia de software.',
+    titulo: 'Princípios de Hooker #1: a razão de existir',
+    resumo: 'Do Direito à engenharia de software: por que voltar aos princípios, e o primeiro deles, resolver um problema de forma simples, agregando valor.',
     data: '2026-11-21',
     tags: ['Engenharia de Software', 'Boas práticas']
   }
